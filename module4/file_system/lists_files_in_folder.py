@@ -9,7 +9,8 @@ def list_files_in_folder(path: str):
     except PermissionError:
         return None, "Permission denied"
     
+    
 if __name__ == "__main__":
-    files, error = list_files_in_folder("/workspaces/python_automation")
+    files, error = list_files_in_folder("/workspaces")
     print("Files: ", files)
     print("Error: ", error)
